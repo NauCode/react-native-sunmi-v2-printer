@@ -1,7 +1,5 @@
 
-# react-native-sunmi-v2-printer
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/suraneti/react-native-sunmi-inner-printer/master/LICENSE) [![npm version](https://badge.fury.io/js/react-native-sunmi-v2-printer.svg)](https://www.npmjs.com/package/react-native-sunmi-v2-printer)
+# react-native-sunmi-printer
 
 ## SUNMI V2 Printer for React-Native
 
@@ -31,51 +29,15 @@ Install from source
 npm install https://github.com/suraneti/react-native-sunmi-v2-printer.git --save
 yarn add https://github.com/suraneti/react-native-sunmi-v2-printer.git --save
 ```
+Note: This project is not tested on React Native < 0.64.1 since this was done to support latest versions.
 
-**Step 2:** (For React-Native < 0.60)
 
-Links this plugin to your project.
-
-```bash
-react-native link react-native-sunmi-v2-printer
-```
-
-or you may need to link manually
-
-* modify settings.gradle
-
-```javascript
-include ':react-native-sunmi-v2-printer'
-project(':react-native-sunmi-v2-printer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sunmi-v2-printer/android')
-```
-
-* modify  app/build.gradle,add dependenceie：
-
-```javascript
-compile project(':react-native-sunmi-v2-printer')
-```
-
-* adds package references to  MainPackage.java
-
-```java
-import com.sunmi.v2.printer.SunmiV2PrinterPackage;
-...
-
- @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-          new SunmiV2PrinterPackage()
-      );
-    }
-```
-
-**Step 3:**
+**Step 2:**
 
 Import in React-Native:
 
 ```javascript
-import SunmiV2Printer from 'react-native-sunmi-v2-printer';
+import SunmiV2Printer from 'react-native-sunmi-printer';
 ```
 
 ## API
