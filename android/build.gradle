@@ -1,7 +1,12 @@
 buildscript {
     repositories {
-        google()
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+        mavenCentral()
         jcenter()
+        google()
+        
     }
 
     dependencies {
