@@ -37,9 +37,13 @@ android {
 }
 
 repositories {
-    mavenCentral()
-    google()
+    maven {
+        url 'https://maven.google.com'
+    }
     jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    google()
+    mavenCentral()
 }
 
 dependencies {
